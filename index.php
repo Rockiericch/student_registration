@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+```
+<div class="header">
+    <h1>Student Registration Portal</h1>
+    <p>Fill in your details below to complete your registration.</p>
+</div>
+
+<form action="submit.php" method="POST">
+
+    <!-- PERSONAL INFORMATION -->
+    <div class="section">
+        <h2>Personal Information</h2>
+
+        <div class="grid">
+
+            <div class="input-box">
+                <label>Student ID</label>
+                <input type="text" name="student_id" required>
+            </div>
+
+            <div class="input-box">
+                <label>First Name</label>
+                <input type="text" name="first_name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Last Name</label>
+                <input type="text" name="last_name" required>
+            </div>
+
+            <div class="input-box">
+                <label>Gender</label>
+                <select name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Date of Birth</label>
+                <input type="date" name="date_of_birth" required>
+            </div>
+
+            <div class="input-box">
+                <label>Telephone Number</label>
+                <input type="tel" name="telephone" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email Address</label>
+                <input type="email" name="email" required>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ACADEMIC INFORMATION -->
+    <div class="section">
+
+        <h2>Academic Information</h2>
+
+        <div class="grid">
+
+            <div class="input-box">
+                <label>Department</label>
+                <select name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="1">Computer Science</option>
+                    <option value="2">Information Technology</option>
+                    <option value="3">Business Administration</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Programme</label>
+                <select name="programme" required>
+                    <option value="">Select Programme</option>
+                    <option value="1">BSc Computer Science</option>
+                    <option value="2">BSc Information Technology</option>
+                    <option value="3">BBA Accounting</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Level</label>
+                <select name="level" required>
+                    <option value="">Select Level</option>
+                    <option value="1">100</option>
+                    <option value="2">200</option>
+                    <option value="3">300</option>
+                    <option value="4">400</option>
+                </select>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- RESIDENTIAL INFORMATION -->
+    <div class="section">
+
+        <h2>Residential Information</h2>
+
+        <div class="input-box">
+            <label>Residential Address</label>
+            <textarea name="address" rows="5"></textarea>
+        </div>
+
+    </div>
+
+    <!-- ACCOUNT INFORMATION -->
+    <div class="section">
+
+        <h2>Account Information</h2>
+
+        <div class="grid">
+
+            <div class="input-box">
+                <label>Username</label>
+                <input type="text" name="username" required>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" name="password" required>
+            </div>
+
+        </div>
+
+    </div>
+
+    <button type="submit">REGISTER NOW</button>
+
+</form>
+```
+
+</div>
+
+</body>
+</html>
